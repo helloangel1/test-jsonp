@@ -13,7 +13,7 @@ export default function Home() {
   const [noticeList, setNoticeList] = useState<Notice[] | null>(null)
 
   useEffect(() => {
-    fetchJsonp('http://localhost:3003/kima.pm.jsonp', {
+    fetchJsonp('https://kimaroom-dev.s3.ap-northeast-1.amazonaws.com/kima.pm.jsonp', {
       jsonpCallbackFunction: 'notice_list'
     }).then((res) => res.json())
       .then((data) => {
