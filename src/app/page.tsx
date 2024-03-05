@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import fetchJsonp from 'fetch-jsonp'
 import { useEffect, useState } from 'react'
 import { NoticeBanner } from "../ui/notice-banner";
